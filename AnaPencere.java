@@ -4,8 +4,8 @@ import java.awt.Toolkit;
 
 public class AnaPencere extends JFrame {
 
-  private int mGenislik = 600;
-  private int mYukseklik = 600;
+  private int mGenislik = 800;
+  private int mYukseklik = 800;
 
   private static AnaPencere mPencere = null;// static fonksiyon içinde sadece static nesne elemanlarına erişilebilir.
 

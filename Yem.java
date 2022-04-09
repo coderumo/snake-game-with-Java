@@ -1,7 +1,6 @@
 import javax.swing.JLabel;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.util.Random;
 import java.awt.Color;
 import java.awt.BasicStroke;
 
@@ -16,15 +15,15 @@ public class Yem extends JLabel {
   @Override
   public void paint(Graphics g)// yılanın özelliklerini biçimlendirme
   {
-    Random rand = new Random();
-    float rr = rand.nextFloat();
-    float gg = rand.nextFloat();
-    float bb = rand.nextFloat();
+    // Random rand = new Random();
+    // float rr = rand.nextFloat();
+    // float gg = rand.nextFloat();
+    // float bb = rand.nextFloat();
 
-    Color randColor = new Color(rr, gg, bb);
+    // Color randColor = new Color(rr, gg, bb);
     
     Graphics2D yilanOzellikleri = (Graphics2D) g;// graphics nesnesini graphics2D ye dönüşüm yaptı
-    yilanOzellikleri.setColor(randColor);// çerçeve rengi
+    yilanOzellikleri.setColor(java.awt.Color.black);// çerçeve rengi
     yilanOzellikleri.setStroke(new BasicStroke(2));// çerçeve kalınlığı
     yilanOzellikleri.drawRect(1, 1, mGenislik-2, mGenislik-2);// kalemin kalınlığına göre çerçeveyi ortalandı
     yilanOzellikleri.setColor(Color.red);
